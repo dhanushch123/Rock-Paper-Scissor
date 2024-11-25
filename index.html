@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissor</title>
+    <link rel="stylesheet" href="style.css">
+
+
+
+</head>
+<body>
+
+    
+
+    <div class="top">
+        <!-- Two children -->
+        <div class="topchild TC1">
+            <div class="Item"> ROCK </div>
+            <div class="Item"> PAPER </div>
+            <div class="Item"> SCISSORS </div>
+            
+        </div>
+         <div class="topchild TC2"> 
+            <div class="score"> 
+                COMPUTER SCORE
+            <div class="computerScore"> 0 </div>
+                
+            </div>
+            <div class="score">
+                YOUR
+                <div> SCORE </div>
+            <div class="YourScore"> 0 </div>
+                
+            </div>
+         </div>
+        
+    
+    </div>
+    <!-- Three buttons rock hand scissor buttons -->
+    <div class="down" > 
+
+    <!-- Three buttons -->
+    <div class="triangle"> ▽
+        <button id="rock" onclick="selectSymbol('rock')"> <img src="./ROCK2.png" alt="rock"> </button>
+        <button id="scissor" onclick="selectSymbol('scissor')"> <img src="./cut.png" alt="Scissor"> </button>
+        <button id="paper" onclick="selectSymbol('paper')"> <img  src="./paper21.jpg" alt="paper"> </button>
+    </div>
+    
+        <div class="selectedSymbols"> 
+            <div class="item item1"> <div class="pick pick1">YOU PICKED</div>
+                <div class="empty"> </div>
+                <div class="outer outer1">
+                    <div class="mid mid1">
+                        <div class="inner inner1">
+                            <button id="rock" class="btn btn1"> <img src="./ROCK2.png" alt="rock"> </button>
+                        </div>
+                    </div>
+                </div>
+              
+                
+                
+                
+                
+            </div>
+            <div class="item item2">
+                <p> YOU WIN </p>
+                <p> AGAINST PC</p>
+                <button id = "reset" onclick="change()"> PLAY AGAIN </button>
+
+            </div>
+            <div class="item item3"><div class="pick pick2">PC PICKED</div>
+                <div class="empty"> </div>
+                <div class="outer outer2">
+                    <div class="mid mid2">
+                        <div class="inner inner2">
+                            <button id="scissor" class="btn btn2" > <img src="./cut.png" alt="Scissor"> </button>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            
+    
+        </div>
+   
+    
+    
+    <button id="close" onclick="closeDetails()" > X </button>
+    <div class = "rulesList"> 
+        <h2> Game Rules</h2>
+        <ul>
+            <li> Rock beats scissors, scissors beat paper, and paper beats rock. </li>
+            <li> Agree ahead of time whether you'll count off "rock, paper, scissors, shoot" or just "rock, paper, scissors."</li>
+            <li> Use rock, paper, scissors to settle minor decisions or simply play to pass the time</li>
+            <li> If both players lay down the same hand, each player lays down another hand</li>        
+        </ul>
+
+    </div>
+    
+    
+    
+ </div>
+ <div class="celebration">
+    <img src="./trophy1.png" alt="celebration">
+    <p> HURRAY!!  </p>
+    <p> CONGRATULATIONS YOU WON </p>
+    <button id = "reset" onclick="set()"> PLAY AGAIN </button>
+    <div class="place"> </div>
+    
+ </div>
+ 
+ <button class="rule"  onclick="displayRules()" > RULES </button>
+ 
+ 
+    
+    
+
+
+    <script src="./script.js">
+
+    </script>
+</body>
+</html>
